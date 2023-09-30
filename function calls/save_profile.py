@@ -5,7 +5,7 @@ import face_recognition
 
 # Function to capture and save an image
 def capture_profile_save(profile_name):
-    folder_path = "lib\Saved_profile_img"
+    folder_path = "lib\Saved_profiles\saved_profile_images"
     cam = cv2.VideoCapture(0)
 
     if not cam.isOpened():
@@ -49,4 +49,5 @@ def capture_profile_save(profile_name):
         writer.writerow([profile_name, fixed_encode])
 
 # Call the function to capture and save the image
-capture_profile_save("Abhay")
+#test command for particular file mentioned below
+#capture_profile_save("Abhay")
